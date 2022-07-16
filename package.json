@@ -1,19 +1,23 @@
 {
-  "name": "api-test",
+  "name": "api-testing-demo",
   "version": "0.0.1",
-  "description": "API test for WG",
-  "main": "index.js",
+  "description": "restful api testing",
   "scripts": {
-    "test": "mocha testcases/**/*-spec.js --reporter spec --exit",
-    "test-r": "mocha testcases/**/*-spec.js --reporter mocha-simple-html-reporter --reporter-options output=./reports/report.html --exit"
+    "test": "node utils/clear && tsc && mocha ",
+    "test-hr": "node utils/clear && tsc && mocha -R mocha-simple-html-reporter --reporter-options output=report.html",
+    "open-report": "node ./utils/openReport"
   },
-  "author": "Shiwei Sun",
-  "license": "ISC",
   "dependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.7",
+    "@types/supertest": "^2.0.8",
     "chai": "^4.2.0",
+    "del": "^5.1.0",
     "mocha": "^6.1.4",
-    "mocha-data-driven": "^1.0.1",
     "mocha-simple-html-reporter": "^1.1.0",
-    "supertest": "^4.0.2"
+    "node-html-parser": "^1.1.16",
+    "supertest": "^4.0.2",
+    "tslint": "^5.10.0",
+    "typescript": "^3.5.2"
   }
 }
