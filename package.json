@@ -13,7 +13,7 @@
     "@types/supertest": "^2.0.8",
     "chai": "^4.2.0",
     "del": "^5.1.0",
-    "mocha": "^6.1.4",
+    "mocha": "^10.2.0",
     "mocha-simple-html-reporter": "^1.1.0",
     "node-html-parser": "^1.1.16",
     "supertest": "^4.0.2",
